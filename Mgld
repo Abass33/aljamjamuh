@@ -1,0 +1,35 @@
+> الاسم : عباس
+
+على :
+  دفع :
+    الفروع : [رئيسي]
+  طلب السحب :
+    الفروع : [رئيسي]
+
+الوظائف :
+  اختبارات Laravel :
+
+    يعمل على : ubuntu-latest
+
+    خطوات :
+    - الاستخدامات : shivammathur / setup-php @ 15c43e89cdef867065b0213be354c2841860869e
+      مع :
+        إصدار php : " 8.0 "
+    - الاستخدامات : الإجراءات / الخروج @ v2
+    - الاسم : نسخ. env
+      run : php -r "file_exists ('. env') || copy ('. env.example'، '.env')؛"
+    - الاسم : تثبيت التبعيات
+      run : composer install -q - no-ansi - no-interaction - no-scripts - no-progress --prefer-dist
+    - الاسم : توليد مفتاح
+      run : مفتاح الحرفي php: إنشاء
+    - الاسم : أذونات الدليل
+      تشغيل : chmod -R 777 تخزين التمهيد / ذاكرة التخزين المؤقت
+    - الاسم : إنشاء قاعدة بيانات
+      تشغيل : |
+        قاعدة بيانات mkdir -p
+        المس قاعدة البيانات / database.sqlite
+    - الاسم : تنفيذ الاختبارات (اختبارات الوحدة والميزات) عبر PHPUnit
+      env :
+        DB_CONNECTION : sqlite
+        DB_DATABASE : قاعدة البيانات / database.sqlite
+      تشغيل : البائع / bin / phpunit
